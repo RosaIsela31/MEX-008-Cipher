@@ -1,15 +1,14 @@
 window.cipher = {
 
-  encode: (str, n) => {
+  encode: (n, str) => {
     let newStr = "";
     const upperStr = str.toUpperCase();
-    console.log(upperStr)
     for(let i = 0; i < upperStr.length; i++){ 
       if(upperStr[i] === " " || upperStr[i] === "Ñ" || upperStr[i] === ","){
         newStr += upperStr[i];
       }else{
-        newPosition = ((upperStr.charCodeAt(i) - 65 + n) %  26) + 65;
-        newLetter = String.fromCharCode(newPosition);
+        let newPosition = ((upperStr.charCodeAt(i) - 65 + n) %  26) + 65;
+        let newLetter = String.fromCharCode(newPosition);
         newStr += newLetter;
        }
     }
@@ -17,15 +16,15 @@ window.cipher = {
    },
    
 
-  decode: (str, n) => {
+  decode: (n, str) => {
    let newStr = "";
     const upperStr = str.toUpperCase();
     for(let i = 0; i < upperStr.length; i++){ 
       if(upperStr[i] === " " || upperStr[i] === "Ñ" || upperStr[i] === ","){
         newStr += upperStr[i];
       }else{
-        newPosition = (upperStr.charCodeAt(i) - n % 26);
-        newLetter = String.fromCharCode(newPosition);
+        let newPosition = (upperStr.charCodeAt(i) - n % 26);
+        let newLetter = String.fromCharCode(newPosition);
         newStr += newLetter;
        }
     }
