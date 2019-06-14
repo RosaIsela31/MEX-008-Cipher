@@ -19,15 +19,19 @@
     </div>
      
 
-    <form action="">
-      <div id="container-cifrar">
-        <div id="text-cifrar">
-          <input id="input" type="text" placeholder="Ingresa tu mensaje aquí">
-          <input id="offset" type="text" placeholder="#">
+    <form id="task-form">
+      <div class="container-cifrar">
+        <div class="text-cifrar">
+          <input class="input" type="text" placeholder="Ingresa tu mensaje aquí" id="mensaje"> 
+          <input class="offset" type="text" placeholder="#">
         </div>
-          <button id="btn-cifrando">CIFRAR</button>
+          <input type="submit" value="CIFRAR" id="btn-cifrando">
+          <!-- <button id="btn-cifrando">CIFRAR</button> -->
+          <div id="mensaje-cifrado"></div> 
       </div>
     </form>
-      
+    <script src="redirect.js"></script>
+    <script src="cipher.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>

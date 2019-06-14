@@ -116,13 +116,13 @@ body{
   padding-top: 90px;
 }
 
-#container-cifrar{
+.container-cifrar{
   height: 1500px;
   background-color: rgb(255, 228, 196);
   padding-top: 50px;
 }
 
-#text-cifrar{
+.text-cifrar{
   height: 300px;
   width: 100%;
   text-align: center;
@@ -143,7 +143,7 @@ body{
  }
 
 
- #input{
+ .input{
    height: 200px;
    width: 800px;
    border-color: rgb(205,92,92);
@@ -154,7 +154,7 @@ body{
    text-align: center;
  }
 
- #offset{
+ .offset{
   height: 60px;
   width: 60px;
   text-align: center;
@@ -186,6 +186,40 @@ body{
   height: 70px;
   width: 180px;
   margin-left: 450px;
+ }
+
+ #btn-descifrando{
+  height: 70px;
+  width: 180px;
+  margin-left: 450px;
+ }
+
+ #mensaje-cifrado{
+  height: 200px;
+  width: 800px;
+  background-color: white;
+  border-width: 50px;
+  border-color: black;
+  border-radius: 8px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 25px;
+  text-align: center;
+  margin-left: 140px;
+  margin-top: 75px;
+ }
+
+ #mensaje-descifrado{
+  height: 200px;
+  width: 800px;
+  background-color: white;
+  border-width: 50px;
+  border-color: black;
+  border-radius: 8px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 25px;
+  text-align: center;
+  margin-left: 140px;
+  margin-top: 75px;
  }
 
  
