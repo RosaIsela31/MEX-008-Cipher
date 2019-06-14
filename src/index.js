@@ -86,8 +86,22 @@ form.addEventListener("submit", (e) => {
   if(inputText.value === " "){
     alert("Ingresa un mensaje");
   } 
-    window.cipher.encode(2 ,inputText.value)
+    // window.cipher.encode(2 ,inputText.value)
     parrafoDiv.innerHTML += inputText.value;
+    e.preventDefault();
+})
+
+const formDescifrar = document.getElementById("task-formDesc");
+const inputTextDescifrar = document.getElementById("mensajeDescifrar");
+const buttonDescifrar = document.getElementById("btn-descifrando");
+const parrafoDivDescifrar = document.getElementById("mensaje-descifrado");
+
+formDescifrar.addEventListener("submit", (e) => {
+  if(inputTextDescifrar.value === " "){
+    alert("Ingresa un mensaje");
+  } 
+    // window.cipher.encode(2 ,inputText.value)
+    parrafoDivDescifrar.innerHTML += inputTextDescifrar.value;
     e.preventDefault();
   
 })
