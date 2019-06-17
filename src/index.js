@@ -74,35 +74,40 @@
 //let inputText = localStorage.getItem("input");
 
 //let btn-
-//----------------------------------------------------------------
-//Intentos
 
-const form = document.getElementById("task-form");
+
+//----------------------------------------------------------------
+//Intentos cifrar √
+
 const inputText = document.getElementById("mensaje");
 const buttonCifrar = document.getElementById("btn-cifrando");
 const parrafoDiv = document.getElementById("mensaje-cifrado");
+const offset = document.getElementById("offset-encriptar");
 
-form.addEventListener("submit", (e) => {
+buttonCifrar.addEventListener("click", () => {
   if(inputText.value === " "){
     alert("Ingresa un mensaje");
   } 
     // window.cipher.encode(2 ,inputText.value)
-    parrafoDiv.innerHTML += inputText.value;
-    e.preventDefault();
+    parrafoDiv.innerHTML += window.cipher.encode(parseInt(offset.value),inputText.value);
+    // e.preventDefault();
 })
 
+//-------------------------------------------------------------
+// Descifrar
 const formDescifrar = document.getElementById("task-formDesc");
 const inputTextDescifrar = document.getElementById("mensajeDescifrar");
 const buttonDescifrar = document.getElementById("btn-descifrando");
 const parrafoDivDescifrar = document.getElementById("mensaje-descifrado");
+const offsetDesc = document.getElementById("offset");
 
-formDescifrar.addEventListener("submit", (e) => {
+inputTextDescifrar.addEventListener("click", () => {
   if(inputTextDescifrar.value === " "){
     alert("Ingresa un mensaje");
   } 
     // window.cipher.encode(2 ,inputText.value)
-    parrafoDivDescifrar.innerHTML += inputTextDescifrar.value;
-    e.preventDefault();
+    parrafoDivDescifrar.innerHTML += window.cipher.decode(offsetDesc.value,inputTextDescifrar.value);
+    // e.preventDefault();
   
 })
 
