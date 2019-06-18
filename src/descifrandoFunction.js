@@ -1,3 +1,5 @@
+//________________________________________________________________
+//
 const inputTextDescifrar = document.getElementById("mensajeDescifrar");
 const buttonDescifrar = document.getElementById("btn-descifrando");
 const parrafoDivDescifrar = document.getElementById("mensaje-descifrado");
@@ -10,5 +12,16 @@ buttonDescifrar.addEventListener("click", () => {
     // window.cipher.encode(2 ,inputText.value)
     parrafoDivDescifrar.innerHTML += window.cipher.decode(parseInt(offsetDesc.value),inputTextDescifrar.value);
     // e.preventDefault();
-  
 })
+//----------------------------------------------------------------
+//Botón para limpiar 
+const buttonClear = document.getElementById("clear");
+
+const cleanTextarea = () => {
+  document.getElementById("task-formDesc").reset();
+  let blankSpace = document.getElementById("mensaje-descifrado");
+  blankSpace.innerHTML = "";
+}
+
+buttonClear.addEventListener("click", cleanTextarea);
+//----------------------------------------------------------------

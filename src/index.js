@@ -94,20 +94,13 @@ buttonCifrar.addEventListener("click", () => {
 })
 
 //-------------------------------------------------------------
-// Descifrar
-const formDescifrar = document.getElementById("task-formDesc");
-const inputTextDescifrar = document.getElementById("mensajeDescifrar");
-const buttonDescifrar = document.getElementById("btn-descifrando");
-const parrafoDivDescifrar = document.getElementById("mensaje-descifrado");
-const offsetDesc = document.getElementById("offset");
+// Botón para borrar
+const buttonClear = document.getElementById("clear");
 
-inputTextDescifrar.addEventListener("click", () => {
-  if(inputTextDescifrar.value === " "){
-    alert("Ingresa un mensaje");
-  } 
-    // window.cipher.encode(2 ,inputText.value)
-    parrafoDivDescifrar.innerHTML += window.cipher.decode(offsetDesc.value,inputTextDescifrar.value);
-    // e.preventDefault();
-  
-})
+const cleanTextarea = () => {
+  document.getElementById("task-form").reset();
+  let blankSpace = document.getElementById("mensaje-cifrado");
+  blankSpace.innerHTML = "";
+}
 
+buttonClear.addEventListener("click", cleanTextarea);

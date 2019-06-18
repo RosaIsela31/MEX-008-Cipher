@@ -16,19 +16,23 @@
 
       <div id="candado">
           <em> <p id="user-cifrar-instructions">Ingresa el mensaje que quieres descifrar</p> </em>
+          <img src="ojos.png" id="ojos" alt="">
       </div>
            
       
-          <form id="task-formDesc">
-            <div class="container-cifrar">
-              <div class="text-cifrar">
+    <form id="task-formDesc">
+      <div class="container-cifrar">
+        <div class="text-cifrar">
                 <input class="input" type="text" placeholder="Ingresa el mensaje que quieres descifrar aquí" id="mensajeDescifrar">
-                <input id="offset" type="text" placeholder="#">
-              </div>
-                <input type="button" value="DESCIFRAR" id="btn-descifrando"></input>
-                <div id="mensaje-descifrado"></div>
-              </div>
-          </form>
+          <input id="offset" type="text" placeholder="#">
+        </div>
+          <input type="button" value="DESCIFRAR" id="btn-descifrando"> 
+          <div id="mensaje-descifrado"></div>
+          <button type="reset" id="clear">Limpiar</button>
+        </div>
+    </form>
+
+         
     <script src="descifrandoFunction.js"></script>   
     <script src="cipher.js"></script>
     <script src="index.js"></script>
