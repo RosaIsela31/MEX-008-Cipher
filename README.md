@@ -20,6 +20,7 @@ Health Secrets contiene un diseño minimalista, intuitivo y con colores claros c
 La aplicación te permitirá elegir entre la opción encriptar un mensaje o desencriptarlo.  
 Si lo que quieres es encriptar un mensaje deberás elegir un número secreto (offset), que es equivalente al número de desplazamientos en el abecedario, por ejemplo: si tu mensaje es “ABC” con un número secreto de 2, entonces tu mensaje encriptado será “CDE”. 
 Si quieres desencriptar un mensaje, recuerda que también debes de contar con el número secreto, dicho número te lo va a proporcionar tu ginecólogx junto con el mensaje encriptado. 
+***
 
 ![caeser-cipher](https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Caesar3.svg/2000px-Caesar3.svg.png)
 
