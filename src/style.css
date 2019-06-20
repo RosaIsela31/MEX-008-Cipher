@@ -37,7 +37,7 @@ body{
 }
 
 #headerP2{
-  height: 200px;
+  height: 180px;
   background-color: white;
   font-size: 30px;
   font-family: Georgia, 'Times New Roman', Times, serif;
@@ -64,10 +64,11 @@ body{
   font-family: Georgia, 'Times New Roman', Times, serif;  
   height: 300px;
   background-color: white;
+  font-size: 22px;
 }
 
 #final{
-  height: 10px;
+  height: 15px;
   background-color: rgb(255, 228, 196);
 }
 
@@ -86,11 +87,23 @@ body{
 #desencriptar{
   height: 70px;
   width: 180px;
+  margin-top: 60px;
+  background-color: #555555;
+  border-radius: 10px;
+  color: white;
+  font-size: 25px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 #encriptar{
   height: 70px;
   width: 180px;
+  margin-top: 60px;
+  background-color: #555555;
+  border-radius: 10px;
+  color: white;
+  font-size: 25px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 #interactionUser{
@@ -117,7 +130,7 @@ body{
 }
 
 .container-cifrar{
-  height: 1500px;
+  height: 1000px;
   background-color: rgb(255, 228, 196);
   padding-top: 50px;
 }
@@ -130,7 +143,7 @@ body{
 
 
 #candado{
-  height: 100px;
+  height: 200px;
   background-color:rgb(255, 228, 196);
   border-radius: 5px;
   text-align: center;
@@ -154,18 +167,7 @@ body{
    text-align: center;
  }
 
- .offset{
-  height: 60px;
-  width: 60px;
-  text-align: center;
-  float: right;
-  margin-right: 270px;
-  border-color: rgb(205,92,92);
-  border-width: 10px;
-  border-radius: 8px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 25px;
-}
+ 
 
  #text-cifrado{
    height: 200px;
@@ -179,19 +181,35 @@ body{
  #user-cifrar-instructions{
    font-family: Georgia, 'Times New Roman', Times, serif;
    color: rgb(205,92,92); 
-   font-size: 25px;
+   font-size: 30px;
  }
+ 
+ #user-descifrar-instructions{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: rgb(205,92,92); 
+  font-size: 30px;
+}
 
  #btn-cifrando{
   height: 70px;
   width: 180px;
-  margin-left: 450px;
+  margin-top: 60px;
+  background-color: #555555;
+  border-radius: 10px;
+  color: white;
+  font-size: 25px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
  }
 
  #btn-descifrando{
   height: 70px;
   width: 180px;
-  margin-left: 450px;
+  margin-top: 60px;
+  background-color: #555555;
+  border-radius: 10px;
+  color: white;
+  font-size: 25px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
  }
 
  #mensaje-cifrado{
@@ -204,7 +222,7 @@ body{
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 25px;
   text-align: center;
-  margin-left: 140px;
+  margin-left: 265px;
   margin-top: 75px;
  }
 
@@ -218,12 +236,75 @@ body{
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 25px;
   text-align: center;
-  margin-left: 140px;
+  margin-left: 260px;
   margin-top: 75px;
  }
 
  #ojos{
-   height: 150px;
+   height: 200px;
  }
 
- 
+ #offset-encriptar{
+   height: 50px;
+   width: 170px;
+   text-align: center;
+   border-width: 2px;
+   border-color: slategrey;
+   margin: 50px;
+ }
+
+ #offset{
+  height: 50px;
+  width: 150px;
+  text-align: center;
+  border-width: 2px;
+  border-color: slategrey;
+  margin: 50px;
+}
+
+#container{
+  height: 1000px;
+  text-align: center;
+  margin: 50px;
+  border-radius: 20px;
+}
+
+#container-descifrar{
+  height: 1000px;
+  text-align: center;
+  margin: 50px;
+  border-radius: 20px;
+}
+
+#clear{
+  height: 70px;
+  width: 180px;
+  margin-top: 60px;
+  background-color: #555555;
+  border-radius: 10px;
+  color: white;
+  font-size: 25px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#backStart{
+  height: 70px;
+  width: 180px;
+  margin-top: 60px;
+  background-color: #555555;
+  border-radius: 10px;
+  color: white;
+  font-size: 25px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#backStart2{
+  height: 70px;
+  width: 180px;
+  margin-top: 60px;
+  background-color: #555555;
+  border-radius: 10px;
+  color: white;
+  font-size: 25px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}

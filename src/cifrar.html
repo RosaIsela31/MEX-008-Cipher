@@ -4,34 +4,48 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>Cifrando</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+ 
     <div id="headerP2">
         <img id="pastilla2" src="pastilla2.png" alt="">
         <em><h1 class="titlePage2">Health Secrets</h1></em>
     </div>
-      
-    <div id="candado">
-    <em> <p id="user-cifrar-instructions">Ingresa el mensaje que quieres cifrar para tu paciente</p> </em>
-    </div>
-     
 
-    <form id="task-form">
-      <div class="container-cifrar">
-        <div class="text-cifrar">
-          <input class="input" type="text" placeholder="Ingresa tu mensaje aquí" id="mensaje"> 
-          <input id="offset-encriptar" type="text" placeholder="#">
-        </div>
-          <input type="button" value="CIFRAR" id="btn-cifrando">
-          <!-- <button id="btn-cifrando">CIFRAR</button> -->
-          <div id="mensaje-cifrado"></div> 
-          <button type="reset" id="clear">Limpiar</button>
-      </div>
-    </form>
+    <div id=container>
+        <div id="candado">
+            <em> <p id="user-cifrar-instructions">Ingresa el mensaje que quieres cifrar para tu paciente</p> </em>
+            <img src="ojos.png" alt="" id="ojos">
+            </div>
+          
+            
+            <form id="task-form">
+              <div class="container-cifrar">
+                <div class="text-cifrar">
+                  <input class="input" type="text" placeholder="Ingresa tu mensaje aquí" id="mensaje"> 
+                  <div>
+                    <input id="offset-encriptar" type="text" placeholder="Ingresa el número secreto">
+                  </div>
+                </div>
+                <div>
+                    <input type="button" value="Cifrar" id="btn-cifrando">
+                </div>
+                  <div id="mensaje-cifrado"></div> 
+                  <div>
+                      <button type="reset" id="clear">Limpiar</button>
+                      <input type="button" value="Regresar" id="backStart2">
+                  </div>
+              </div>
+            </form>
+
+
+    </div>
+      
+   
     <script src="cipher.js"></script>
     <script src="index.js"></script>
+    <script src="backSegundaPantalla2.js"></script>
 </body>
 </html>

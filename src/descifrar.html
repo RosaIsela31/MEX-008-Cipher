@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>Descifrando</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,28 +13,37 @@
         <em><h1 class="titlePage2">Health Secrets</h1></em>
       </div>
 
+      <div id="container-descifrar">
+          <div id="candado">
+              <em> <p id="user-cifrar-instructions">Ingresa el mensaje que quieres descifrar</p> </em>
+              <img src="ojos.png" id="ojos" alt="">
+          </div>
+               
+          
+        <form id="task-formDesc">
+          <div class="container-cifrar">
+            <div class="text-cifrar">
+              <input class="input" type="text" placeholder="Ingresa el mensaje que quieres descifrar aquí" id="mensajeDescifrar">
+              <div>
+               <input id="offset" type="text" placeholder="Ingresa el número secreto">
+              </div>
+            </div>
+            <div>
+             <input type="button" value="Descifrar" id="btn-descifrando"> 
+            </div>
+              <div id="mensaje-descifrado"></div>
+              <button type="reset" id="clear">Limpiar</button>
+              <input type="button" value="Regresar" id="backStart">
+            </div>
+        </form>
 
-      <div id="candado">
-          <em> <p id="user-cifrar-instructions">Ingresa el mensaje que quieres descifrar</p> </em>
-          <img src="ojos.png" id="ojos" alt="">
+
       </div>
-           
-      
-    <form id="task-formDesc">
-      <div class="container-cifrar">
-        <div class="text-cifrar">
-                <input class="input" type="text" placeholder="Ingresa el mensaje que quieres descifrar aquí" id="mensajeDescifrar">
-          <input id="offset" type="text" placeholder="#">
-        </div>
-          <input type="button" value="DESCIFRAR" id="btn-descifrando"> 
-          <div id="mensaje-descifrado"></div>
-          <button type="reset" id="clear">Limpiar</button>
-        </div>
-    </form>
 
-         
+    <script src="backToSegundaPantalla.js"></script>
     <script src="descifrandoFunction.js"></script>   
     <script src="cipher.js"></script>
     <script src="index.js"></script>
+
 </body>
 </html>
