@@ -11,6 +11,7 @@ Es por ello que desarrollamos Health Secrets.
 Aunque inicialmente fue pensada para médicos en general, al final se concentró únicamente para ginecólogxs y pacientes, ya que la mayoría de las mujeres encuestadas señalaron que les sería bastante útil, pues no querían volver a pasar por sucesos vergonzosos durante sus visitas al ginecólogo … ¡Otra vez!
 
 Health Secrets contiene un diseño minimalista, intuitivo y con colores claros con la intención de generar una gran experiencia y confianza a nuestras usuarias. 
+***
 
 ## Te preguntarás ¿Y cómo puedo usar Health Secrets?  
 ### El proceso es muy fácil, simplemente ingresa a la siguiente liga: 
